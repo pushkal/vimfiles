@@ -101,12 +101,6 @@ nnoremap <silent> <C-M> :SaveSession<CR>
 "`#` should follow neighbouring indentation
 inoremap # X<BS>#
 
-"vim pad mapings
-
-nmap <leader>n :OpenPad<CR>
-nmap <leader><esc> :ListPad<CR>
-
-
 "" Auto execution commands
 
 autocmd VimEnter * set vb t_vb=""   "disable beeping and flashing

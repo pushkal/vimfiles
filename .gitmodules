@@ -37,9 +37,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/pad"]
-	path = bundle/pad
-	url = https://github.com/vim-scripts/vim-pad.git
 [submodule "bundle/virtualenv"]
 	path = bundle/virtualenv
 	url = https://github.com/jmcantrell/vim-virtualenv.git
@@ -55,3 +52,6 @@
 [submodule "bundle/zoomwin"]
 	path = bundle/zoomwin
 	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule "bundle/sparkup"]
+	path = bundle/sparkup
+	url = https://github.com/tristen/vim-sparkup.git
