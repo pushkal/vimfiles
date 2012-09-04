@@ -42,7 +42,7 @@ set showmode                "show current mode down the bottom
 
 "display tabs and trailing spaces
 set list
-"set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 "some stuff to get the mouse going in term
 set mouse=a
