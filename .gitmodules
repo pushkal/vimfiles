@@ -58,3 +58,18 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/csexton/snipmate.vim.git
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = git://github.com/mattn/zencoding-vim.git
+[submodule "bundle/html5"]
+	path = bundle/html5
+	url = https://github.com/othree/html5.vim.git
+[submodule "bundle/powerline"]
+	path = bundle/powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/jshint"]
+	path = bundle/jshint
+	url = https://github.com/wookiehangover/jshint.vim.git

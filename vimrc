@@ -10,9 +10,12 @@ call pathogen#helptags()
 set encoding=utf-8
 set noswapfile          "disable swapfiles
 set hidden              "hide buffers when not displayed
-set textwidth=80        "maximum width of text that can be inserted
+set textwidth=0        "maximum width of text that can be inserted
 set nofoldenable        "dont fold by default
-ret formatoptions-=o    "dont continue comments when pushing o/O
+set formatoptions-=o    "dont continue comments when pushing o/O
+set guifont=Monaco:h14
+
+imap ,/ </<C-X><C-O>
 
 "use w!! to save with root permissions
 cmap w!! %!sudo tee > /dev/null %
@@ -34,12 +37,12 @@ set wildignore=*.o,*~,*.pyc,*.hi
 set t_Co=256                "force 256 colours
 colorscheme xoria256-trans  "nice dark colorscheme
 set colorcolumn=+1          "mark the ideal max text width
-set rnu                     "show line numbers
+set number                  "show line numbers
 set showmode                "show current mode down the bottom
 
 "display tabs and trailing spaces
 set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+"set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 "some stuff to get the mouse going in term
 set mouse=a
@@ -71,7 +74,9 @@ set expandtab                   "use spaces for tabs and set it to 4 spaces
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
 set nowrap                      "dont wrap lines
+
 set backspace=indent,eol,start  "backspace through everything in insert mode
 
 "" Searching
@@ -300,3 +305,5 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Display_Tag_Scope = 1
 let Tlist_Process_File_Always = 1
 let Tlist_Show_One_File = 1
+
+let g:session_autoload = 'no'
