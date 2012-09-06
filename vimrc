@@ -141,3 +141,5 @@ let g:syntastic_python_checker='pylint'
 let g:session_autoload = 'no'
 let g:neocomplcache_enable_at_startup = 1
 
+"PHP PIV
+let g:DisableAutoPHPFolding = 1
