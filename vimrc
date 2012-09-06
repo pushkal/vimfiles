@@ -13,7 +13,7 @@ set hidden			  "hide buffers when not displayed
 set textwidth=0		"maximum width of text that can be inserted
 set nofoldenable		"dont fold by default
 set formatoptions-=o	"dont continue comments when pushing o/O
-"set guifont=Monospace:h16
+set guifont=Monospace\ 13
 
 imap ,/ </<C-X><C-O>
 
@@ -69,11 +69,13 @@ set cinoptions+=+1
 
 "" Handling whitespaces
 
-set expandtab				   "use spaces for tabs and set it to 4 spaces
+set noet ci pi sts=0 sw=4 ts=4 "use tabs and set it to 4 spaces
+
+"set expandtab				   "use spaces for tabs and set it to 4 spaces
 "4 spaces is a tab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+"set tabstop=4
+"set softtabstop=4
+"set shiftwidth=4
 
 set nowrap					  "dont wrap lines
 
@@ -299,7 +301,7 @@ let g:syntastic_auto_loc_list=2
 "taglist settings
 let Tlist_Enable_Fold_Column = 0
 let Tlist_Exit_OnlyWindow = 0
-let Tlist_WinWidth = 35
+let Tlist_WinWidth = 25
 let Tlist_Use_Right_Window=1
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Display_Tag_Scope = 1
@@ -307,4 +309,3 @@ let Tlist_Process_File_Always = 1
 let Tlist_Show_One_File = 1
 
 let g:session_autoload = 'yes'
-set noet ci pi sts=0 sw=4 ts=4
