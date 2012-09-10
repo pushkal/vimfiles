@@ -93,8 +93,9 @@ set smartcase	   "consider case for search patterns with uppercase letters
 
 "explorer mappings
 nnoremap <silent> <F1> :BufExplorer<CR>
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
+nnoremap <silent> <F2> :NERDTreeTabsToggle<CR>
 nnoremap <silent> <F3> :TagbarToggle<CR>
+nnoremap <silent> <F4> :set hlsearch!<CR>
 
 "remove trailing whitespaces with <F5>
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
@@ -138,7 +139,10 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=2
 let g:syntastic_python_checker='pylint'
 
+"session
 let g:session_autoload = 'no'
+let g:session_autosave = 'no'
+
 let g:neocomplcache_enable_at_startup = 1
 
 "PHP PIV
